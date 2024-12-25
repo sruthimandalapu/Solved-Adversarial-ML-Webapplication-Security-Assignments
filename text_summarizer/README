@@ -1,1 +1,34 @@
 LaMini-Flan-T5-248M
+--------------------------------------------------------------------
+References:
+--------------------------------------------------------------------
+T5 Transformer:
+https://towardsdatascience.com/the-secret-guide-to-human-like-text-summarization-fcea0bfbe801
+https://pytorch.org/tutorials/beginner/t5_tutorial.html#:~:text=This%20tutorial%20demonstrates%20how%20to%20use%20a%20pretrained%20T5%20Model
+https://thepythoncode.com/article/text-summarization-using-huggingface-transformers-python#:~:text=This%20tutorial%20will%20use%20HuggingFace's%20transformers%20library%20in
+https://www.youtube.com/watch?v=KMyZUIraHio
+https://www.youtube.com/watch?v=q1TNpbPq3vY
+https://www.youtube.com/watch?v=78KjuKYiF6s
+https://www.youtube.com/watch?v=CDmPBsZ09wg
+https://www.youtube.com/watch?v=GIbar_kZzwk&t=2031s
+https://www.youtube.com/watch?v=0l70K5c5NkM
+--------------------------------------------------------------------
+BART:
+https://medium.com/@sandyeep70/demystifying-text-summarization-with-deep-learning-ce08d99eda97#:~:text=BART%20%28Bidirectional%20and%20Auto-Regressive%20Transformers%29%20is%20a%20transformer-based,proficient%20at%20generating%20coherent%20and%20contextually%20relevant%20summaries.
+https://www.digitalocean.com/community/tutorials/bart-model-for-text-summarization-part1
+https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/nlp/ipynb/abstractive_summarization_with_bart.ipynb#:~:text=Bidirectional%20Autoregressive%20Transformer%20(BART)%20is%20a
+https://huggingface.co/docs/transformers/model_doc/bart
+https://paperswithcode.com/method/bart#:~:text=BART%20is%20a%20denoising%20autoencoder%20for%20pretraining
+https://www.youtube.com/watch?v=6pkqIVfr_VE
+https://www.youtube.com/watch?v=HDSNjrxSwqw
+https://www.youtube.com/watch?v=Y2wrtZPrct8
+------------------------------------------------------------------------
+Git Resources:
+https://github.com/GoogleCloudPlatform/generative-ai/blob/main/language/use-cases/document-summarization/summarization_large_documents_langchain.ipynb?utm_source=chatgpt.com
+https://github.com/cognitivetech/ollama-ebook-summary?utm_source=chatgpt.com
+https://github.com/icoxfog417/awesome-text-summarization?utm_source=chatgpt.com
+https://github.com/Yale-LILY/SummerTime?utm_source=chatgpt.com
+https://github.com/armancohan/long-summarization?utm_source=chatgpt.com
+https://github.com/huankoh/long-doc-summarization?utm_source=chatgpt.com
+https://github.com/nizarzerouale/Summarize-Large-Pdfs-with-AI
+
