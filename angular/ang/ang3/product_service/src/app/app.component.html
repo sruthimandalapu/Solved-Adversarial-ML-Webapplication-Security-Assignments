@@ -1,0 +1,27 @@
+<body style="margin-left:20px;">
+<h1>Angular Product Service</h1><br>
+<button (click)="get_products()">Get Products</button>
+<br><br>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Name</th>
+    <th scope="col">Price</th>
+    <th scope="col">Rating</th>
+    <th scope="col">Discount</th>
+    <th scope="col">Price After Discount</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr scope="row" *ngFor="let product of products">
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.cost}}</td>
+    <td>{{product.rating}}</td>
+    <td>{{product.cost*10/100}}</td>
+    <td>{{product.cost | discount:10}}</td>
+  </tr>
+  </tbody>
+</table>
+</body>

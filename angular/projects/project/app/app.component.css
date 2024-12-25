@@ -1,0 +1,27 @@
+.red{
+    color:red;
+}
+.size{
+    font-size:24px;
+}
+.text-success{
+    color:red;
+}
+.text-primary{
+    color:blue;
+}
+.text-danger{
+    color:green;
+}
+.text-warning{
+    color:pink;
+}
+.one{
+    color:purple;
+}
+.two{
+    font-style:italic;
+}
+.three{
+    font-size:50px;
+}

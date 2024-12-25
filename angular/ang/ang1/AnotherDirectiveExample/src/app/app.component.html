@@ -1,0 +1,12 @@
+<h1 style="margin-left:30px;">{{title}}</h1>
+<ul *ngFor="let car of carsList">
+  <li>{{car.carsBrand}} - {{car.carsCountry}}</li>
+</ul>
+<br>
+<ul *ngFor="let p of people">
+  <li>{{p}}</li>
+</ul>
+<br>
+<select>
+  <option *ngFor="let f of frameworks">{{f}}</option>
+</select>

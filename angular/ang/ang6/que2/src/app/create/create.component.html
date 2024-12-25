@@ -1,0 +1,10 @@
+<h1>Add a New Employee</h1>
+<form>
+    <label>Id</label>
+    <input type="text" name="id" [(ngModel)]="Employees.id"><br><br>
+    <label>First Name</label>
+    <input type="text" name="firstName" [(ngModel)]="Employees.firstName"><br><br>
+    <label>Last Name</label>
+    <input type="text" name="lastName" [(ngModel)]="Employees.lastName"><br><br>
+    <input type="submit" (click)="submit()">
+</form>

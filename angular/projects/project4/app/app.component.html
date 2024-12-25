@@ -1,0 +1,84 @@
+<!-- Example1 - Reading the text from file-->
+<!--
+<p>{{val}}</p>
+-->
+
+
+<!-- Example2 - Reading data from a url-->
+<!--
+<p>{{httpdata}}</p>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Company</th>
+  </tr>
+  <tr *ngFor="let data of httpdata">
+    <td>{{data.id}}</td>
+    <td>{{data.name}}</td>
+    <td>{{data.username}}</td>
+    <td>{{data.email}}</td>
+    <td>{{data.address.street}}, {{data.address.city}}, {{data.address.phone}}</td>
+    <td>{{data.company.name}}, {{data.company.catchPhrase}}</td>
+  </tr>
+</table>
+-->
+
+<!-- Example3 - Reading data from a json file-->
+<!--
+<span *ngFor="let user of users_read">
+  <li>{{user.name}}</li>
+</span>
+-->
+
+<!-- Example4 - Retrieving data from json server-->
+<!--
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let emp of employees">
+    <td>{{emp.id}}</td>
+    <td>{{emp.name}}</td>
+    <td>{{emp.status}}</td>
+  </tr>
+</table>
+-->
+
+
+<!-- Example4 - Retrieving data from json server -->
+<!--
+<ul *ngFor="let book of books">
+  <li>{{book.id}}</li>
+  <li>{{book.name}}</li>
+  <li>{{book.author}}</li>
+</ul>
+-->
+
+<!--
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let fruit of allFruits">
+        <td>{{fruit.id}}</td>
+        <td>{{fruit.name}}</td>
+        <td>{{fruit.price}}</td>
+        <td>{{fruit.quantity}}</td>
+        <td>{{(fruit.quantity)*(fruit.price)}}</td>
+        <td><button><a [routerLink]="['../edit',fruit.id]">edit</a></button></td>
+    </tr>
+</table>
+-->
+<!-- <button><a [routerLink]="['./create']">Create</a></button> -->
+<router-outlet></router-outlet>

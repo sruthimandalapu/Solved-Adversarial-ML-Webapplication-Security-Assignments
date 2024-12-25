@@ -1,0 +1,36 @@
+<body style="margin:20px;">
+<h1 style="background-color:aquamarine;text-align:center;">Staff Management</h1>
+<div>
+  <label>Staff Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="Provide Staff Name" name="name" [(ngModel)]="name">
+</div>
+<br>
+<div>
+  <label>City</label>&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="Enter City" name="city" [(ngModel)]="city">
+</div>
+<br>
+<div>
+  <label>Salary</label>&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="0" name="salary" [(ngModel)]="salary">
+</div>
+<br>
+<div>
+  <input type="submit" value="Add" (click)="addStaff()">
+</div>
+<hr>
+<br>
+<br>
+<table border="1">
+  <tr>
+    <th>Staff Name</th>
+    <th>City</th>
+    <th>Salary</th>
+  </tr>
+  <tr *ngFor="let member of staff_members">
+    <td>{{member.staffName}}</td>
+    <td>{{member.city}}</td>
+    <td>{{member.salary}}</td>
+  </tr>
+</table>
+</body>

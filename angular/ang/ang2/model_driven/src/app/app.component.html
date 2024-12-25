@@ -1,0 +1,33 @@
+<form [formGroup]="customerForm">
+  <div>
+    <label>Id:</label><br>
+    <input name="name" type="text" formControlName="id">
+  </div>
+  <div>
+    <label>Name:</label><br>
+    <input name="name" type="text" formControlName="name">
+  </div>
+  <div>
+    <label>Street:</label><br>
+    <input name="street" type="text" formControlName="street">
+  </div>
+  <div>
+    <label>City:</label><br>
+    <input name="city" type="text" formControlName="city">
+  </div>
+  <div>
+    <label>Zip Code:</label><br>
+    <input name="zipcode" type="text" formControlName="zipcode">
+  </div>
+</form>
+<pre>
+data={{'{'}}
+  "id": {{customerForm.value.id}},
+  "name": {{customerForm.value.name| json}},
+  "address": {{'{'}}
+    "street": {{customerForm.value.street | json}},
+    "city": {{customerForm.value.city | json}},
+    "zip": {{customerForm.value.zipcode | json}}
+  {{'}'}}
+{{'}'}};
+</pre>

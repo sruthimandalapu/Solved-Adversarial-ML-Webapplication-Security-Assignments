@@ -1,0 +1,73 @@
+<h1>Main Component</h1>
+<!-- <app-student [parMsg]="parentMessage"></app-student> -->
+
+<!-- Attribute or Property Binding-->
+<img [src]="path"><br>
+<span [innerText]="value"></span><br><br>
+<hr/>
+
+<!-- Event Binding-->
+<button (click)="onClick()">click here</button><br><br>
+<hr/>
+
+<!-- Class binding -->
+<span class="red">This is in red color</span><br>
+<span [className]="'red size'">This is in red color</span><br>
+<hr/>
+
+<!-- ngClass-->
+<span [ngClass]="'red size'">ngClass Binding</span><br>
+<span [ngClass]="['red','size']">ngClass Binding</span><br>
+<span [ngClass]="{'red':true,'size':false}">ngClass Binding</span><br>
+<hr/>
+
+<!-- Two way Binding -->
+Enter your name: <input [(ngModel)]="fullName" /><br>
+<p>{{ fullName }}</p>
+<hr/>
+
+<!-- ngIf and ngFor usage-->
+<ul *ngFor="let person of people">
+    <li *ngIf="person.country==='india'" class="text-success">{{person.name}} ({{person.country}})</li>
+    <li *ngIf="person.country==='us'" class="text-primary">{{person.name}} ({{person.country}})</li>
+    <li *ngIf="person.country==='uk'" class="text-danger">{{person.name}} ({{person.country}})</li>
+    <li *ngIf="person.country!='india' && person.country!='us' && person.country!='uk'" class="text-warning">{{person.name}} ({{person.country}})</li>
+</ul>
+<hr/>
+
+<ul *ngFor="let person of people">
+    <li *ngIf="person.age<=15">{{person.name}} of age {{person.age}}</li>
+</ul>
+<hr/>
+
+<div>
+    <input type="radio" name="rb" (click)="ChangeData(true)" checked>Valid
+    <input type="radio" name="rb" (click)="ChangeData(false)">Invalid
+</div>
+<div *ngIf="isValid">Valid is checked</div>
+<div *ngIf="!isValid">Invalid is checked</div>
+<hr/>
+
+<!-- ngSwitch usage -->
+<select (change)="SetDropDownValue($event)">
+    <option value="">Select</option>
+    <option value="in">India</option>
+    <option value="us">US</option>
+    <option value="uk">UK</option>
+</select>
+<div [ngSwitch]="dropDownValue">
+    <h4 *ngSwitchCase="'in'">You have selected India</h4>
+    <h4 *ngSwitchCase="'us'">You have selected United States</h4>
+    <h4 *ngSwitchCase="'uk'">You have selected United Kingdom</h4>
+    <h4 *ngSwitchDefault="">You haven't selected any Country</h4>
+</div>
+
+<!-- ngStyle usage -->
+<div>
+    <button [ngStyle]="AddButtonCSSStyles()">Virtusa</button>
+</div>
+
+<!-- ngClass usage-->
+<div [ngClass]="AddCSSClasses('type1')">Sruthi</div>
+<div [ngClass]="['one','three']">Sruthi</div>
+<div [ngClass]="'one two'">sruthi</div>

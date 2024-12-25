@@ -1,0 +1,12 @@
+<p>Edit Item</p>
+<form>
+    <label>ID</label>
+    <input type="text" name="id" [(ngModel)]="fruitForm.id"><br><br>
+    <label>NAME</label>
+    <input type="text" name="name" [(ngModel)]="fruitForm.name"><br><br>
+    <label>PRICE</label>
+    <input type="text" name="price" [(ngModel)]="fruitForm.price"><br><br>
+    <label>QUANTITY</label>
+    <input type="text" name="quantity" [(ngModel)]="fruitForm.quantity"><br><br>
+    <input type="button" (click)="update()" value="Edit">
+</form>

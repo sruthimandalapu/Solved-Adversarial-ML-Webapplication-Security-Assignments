@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-sm-6">
+<div class="card" style="width: 30rem;border:none;margin:20px;">
+<form class="form-group" #first_form="ngForm" (ngSubmit)="second_submit()">
+    <label>Name</label>
+    <input class="form-control" type="text" name="name" [(ngModel)]="name" placeholder="Name">
+    <small id="emailHelp" class="form-text text-muted">Name will be Displayed through service</small><br>
+    <button class="btn btn-primary">Retrieve</button>
+</form>
+</div>
+</div>
+</div>

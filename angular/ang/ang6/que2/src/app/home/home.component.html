@@ -1,0 +1,16 @@
+<h1>Adding Content to Json Server</h1> 
+<br>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr>
+  <tr *ngFor="let e of emp">
+    <td>{{e.id}}</td>
+    <td>{{e.firstName}}</td>
+    <td>{{e.lastName}}</td>
+  </tr>
+</table>
+<br>
+<button><a [routerLink]="['../create']">Add New Employee</a></button>

@@ -1,0 +1,45 @@
+<!-- Without Bootstrap -->
+<!-- 
+<h1>Birthday Records</h1>
+<hr>
+<span>Sort By</span><br>
+<input type="radio" id="name" value="name" name="sortType" [checked]="nameRadio" [(ngModel)]="nameRadio" (click)="nameSort()">Name
+<input type="radio" id="age" value="age" name="sortType" [checked]="ageRadio" [(ngModel)]="ageRadio" (click)="dateSort()">Age
+<table>
+    <tr>
+        <th>Person Name</th>
+        <th>Date of Birth</th>
+    </tr>
+    <tr *ngFor="let people of peopleList">
+        <td>{{people.personName}}</td>
+        <td>{{people.dateOfBirth}}</td>
+    </tr>
+</table>
+-->
+
+<!-- Bootstrap -->
+<div style="margin:20px;">
+<h1>Birthday Records</h1>
+<hr>
+<span>Sort By</span>
+<div class="form-check">
+<input class="form-check-input" type="radio" id="name" value="name" name="sortType" [checked]="nameRadio" [(ngModel)]="nameRadio" (click)="nameSort()"><label class="form-check-label" for="flexRadioDefault1">Name</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="radio" id="age" value="age" name="sortType" [checked]="ageRadio" [(ngModel)]="ageRadio" (click)="dateSort()"><label class="form-check-label" for="flexRadioDefault2">Age</label>
+</div>
+<table style="width:40%" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Person Name</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let people of peopleList">
+            <td>{{people.personName}}</td>
+            <td>{{people.dateOfBirth}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

@@ -1,0 +1,15 @@
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Edit</th>
+    </tr>
+    <tr *ngFor="let val of value">
+        <td>{{val.id}}</td>
+        <td>{{val.name}}</td>
+        <td>{{val.age}}</td>
+        <td><a [routerLink]="['/edit',val.id]">Edit</a></td>
+    </tr>
+</table>
+<button><a [routerLink]="['/create']">Add an Employee</a></button>

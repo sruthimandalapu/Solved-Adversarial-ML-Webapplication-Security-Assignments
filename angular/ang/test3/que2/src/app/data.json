@@ -1,0 +1,36 @@
+{
+  "tickets": [
+    {
+      "id": 1,
+      "name": "Orange Travels",
+      "passengers": 3,
+      "charge": 1000,
+      "destination": "Chennai",
+      "boarding": "Salem"
+    },
+    {
+      "id": 2,
+      "name": "Rytham Travels",
+      "passengers": 2,
+      "charge": 850,
+      "destination": "Salem",
+      "boarding": "Chennai"
+    },
+    {
+      "id": 3,
+      "name": "SRM Travels",
+      "passengers": 2,
+      "charge": 3500,
+      "boarding": "Bangalore",
+      "destination": "Goa"
+    },
+    {
+      "id": 4,
+      "name": "KPN Travels",
+      "passengers": 2,
+      "charge": 1400,
+      "boarding": "Covai",
+      "destination": "Kochin"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<h2>Displaying list of users using ngFor and mofifying the color of Gender</h2>
+<table>
+  <tr>
+    <th class="td1">ID</th>
+    <th class="td1">LABEL</th>
+    <th class="td1">AGE</th>
+    <th class="td1">GENDER</th>
+    <th class="td1">URL</th>
+  </tr>
+  <tr [ngClass]="addStyle(person)" *ngFor="let person of users">
+      <td class="td1">{{person.id}}</td>
+      <td class="td1">{{person.label}}</td>
+      <td class="td1">{{person.age}}</td>
+      <td class="td1">{{person.gender}}</td>
+      <td class="td1">{{person.url}}</td>
+  </tr>
+</table>
+
+<h2>Displaying list of users based on font size</h2>
+<span *ngFor="let person of users">
+  <tr [ngStyle]="{'font-size.px':person.age}">
+    <td>{{person.id}}</td>&nbsp;&nbsp;
+    <td>{{person.label}}</td>&nbsp;&nbsp;
+    <td>{{person.age}}</td>&nbsp;&nbsp;
+    <td>{{person.gender}}</td>&nbsp;&nbsp;
+    <td>{{person.url}}</td>&nbsp;&nbsp;
+  </tr>
+  <br>
+</span>
+

@@ -1,0 +1,64 @@
+<div class="container">
+  <form [formGroup]="angForm" #form="ngForm" novalidate>
+
+    <div>
+      <label>First Name: </label>
+      <input type="text" formControlName="first_name">
+    </div>
+
+    <div *ngIf="angForm.controls['first_name'].invalid && (angForm.controls['first_name'].dirty || angForm.controls['first_name'].touched)" class="alert alert-danger">
+      <div *ngIf="angForm.controls['first_name'].errors?.['required']">
+        First Name is required!
+      </div>
+    </div>
+
+    <div>
+      <label>Last Name: </label>
+      <input type="text" formControlName="last_name">
+    </div>
+
+    <div *ngIf="angForm.controls['last_name'].invalid && (angForm.controls['last_name'].dirty || angForm.controls['last_name'].touched)" class="alert alert-danger">
+      <div *ngIf="angForm.controls['last_name'].errors?.['required']">
+        Last Name is required!
+      </div>
+    </div>
+
+    <div>
+      <label>Email: </label>
+      <input type="text" formControlName="email">
+    </div>
+
+    <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alert alert-danger">
+      <div *ngIf="angForm.controls['email'].errors?.['required']">
+        Email is required!
+      </div>
+    </div>
+
+    <div>
+      <label>Password: </label>
+      <input type="text" formControlName="password">
+    </div>
+
+    <div *ngIf="angForm.controls['password'].invalid && (angForm.controls['password'].dirty || angForm.controls['password'].touched)" class="alert alert-danger">
+      <div *ngIf="angForm.controls['password'].errors?.['required']">
+        Password is required!
+      </div>
+    </div>
+
+    <div>
+      <label>Confirm Password: </label>
+      <input type="text" formControlName="confirm_password">
+    </div>
+
+    <div *ngIf="angForm.controls['confirm_password'].invalid && (angForm.controls['confirm_password'].dirty || angForm.controls['confirm_password'].touched)" class="alert alert-danger">
+      <div *ngIf="angForm.controls['confirm_password'].errors?.['required']">
+        Confirm Password is required!
+      </div>
+    </div>
+
+    <div>
+      <button [disabled]="angForm.pristine || angForm.invalid" type="submit" class="btn btn-success">Register</button>
+    </div>
+
+  </form>
+</div>

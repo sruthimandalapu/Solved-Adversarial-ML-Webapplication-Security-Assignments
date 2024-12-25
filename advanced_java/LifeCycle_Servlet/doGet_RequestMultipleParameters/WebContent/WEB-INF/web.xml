@@ -1,0 +1,10 @@
+<web-app>
+<servlet>
+<servlet-name>servletreq</servlet-name>
+<servlet-class>ServletReq</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>servletreq</servlet-name>
+<url-pattern>/req</url-pattern>
+</servlet-mapping>
+</web-app>

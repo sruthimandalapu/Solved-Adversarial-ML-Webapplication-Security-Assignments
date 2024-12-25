@@ -1,0 +1,26 @@
+<body style="margin:20px;">
+<h1>Importing Json File From Angular Project</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Year</th>
+      <th>ColorCode</th>
+      <th>Color in Background</th>
+      <th>Color in Text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let d of val">
+      <td>{{d.id}}</td>
+      <td>{{d.name}}</td>
+      <td>{{d.year}}</td>
+      <td>{{d.color}}</td>
+      <td><span [ngStyle]="addStyle1(d)">{{d.color}}</span></td>
+      <td [ngStyle]="{'color':d.color}">{{d.color}}</td>
+    </tr>
+  </tbody>
+
+</table>
+</body>

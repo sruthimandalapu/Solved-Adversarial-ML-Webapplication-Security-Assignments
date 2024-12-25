@@ -1,0 +1,20 @@
+<style>
+  .is-invalid {
+  border: 1px solid red;
+}
+
+.invalid-feedback {
+  color: red;
+}
+</style>
+<form [formGroup]="myForm" (ngSubmit)="onSubmitted()">
+  <div class="form-group">
+    <label for="myControl">My Control:</label>
+    <input type="text" id="myControl" class="form-control"
+            [ngClass]="{'is-invalid':(myForm.get('myControl')?.dirty || formSubmitted)}" formControlName="myControl">
+    <div *ngIf="myForm.get('myControl')?.invalid && myForm.get('myControl')?.touched" class="invalid-feedback">
+      Please enter a valid value for My Control.
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

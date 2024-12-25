@@ -1,0 +1,27 @@
+<table style="margin:20px;">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Bus Name</th>
+        <th>Destination</th>
+        <th>Number of Passenger</th>
+        <th>Ticket Fee</th>
+        <th>Total Fare</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let val of value">
+        <td>{{val.id}}</td>
+        <td>{{val.name}}</td>
+        <td>{{val.passengers}}</td>
+        <td>{{val.charge}}</td>
+        <td>{{val.boarding}}</td>
+        <td>{{val.destination}}</td>
+        <td>
+          <button><a [routerLink]="['/edit',val.id]">edit</a></button>
+          <button [routerLink]="['/delete',val.id]">delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

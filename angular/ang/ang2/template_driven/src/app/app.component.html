@@ -1,0 +1,33 @@
+<form #customerForm="ngForm">
+  <div>
+    <label>Id:</label><br>
+    <input name="id" type="text" [(ngModel)]="data.id">
+  </div>
+  <div>
+    <label>Name:</label><br>
+    <input name="name" type="text" [(ngModel)]="data.name">
+  </div>
+  <div>
+    <label>Street:</label><br>
+    <input name="street" type="text" [(ngModel)]="data.address.street">
+  </div>
+  <div>
+    <label>City:</label><br>
+    <input name="city" type="text" [(ngModel)]="data.address.city">
+  </div>
+  <div>
+    <label>Zip Code:</label><br>
+    <input name="zipcode" type="text" [(ngModel)]="data.address.zipcode">
+  </div>
+</form>
+<pre>
+data={{'{'}}
+  "id": {{data.id}},
+  "name": {{data.name| json}},
+  "address": {{'{'}}
+    "street": {{data.address.street | json}},
+    "city": {{data.address.city | json}},
+    "zip": {{data.address.zipcode | json}}
+  {{'}'}}
+{{'}'}};
+</pre>

@@ -1,0 +1,14 @@
+<h1>Monthly sales figures</h1>
+<br>
+<table border="1">
+  <tr>
+    <th>Month</th>
+    <th>Percentage</th>
+    <th>Figures</th>
+  </tr>
+  <tr *ngFor="let sale of sales">
+    <td>{{sale.Month}}</td>
+    <td>{{sale.Perc}}</td>
+    <td>{{sale.Sales_Figure}}</td>
+  </tr>
+</table>

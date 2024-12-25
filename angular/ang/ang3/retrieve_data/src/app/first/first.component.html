@@ -1,0 +1,10 @@
+<div class="card" style="width: 30rem;border:none;margin:20px;float:left">
+<form class="form-group" #first_form="ngForm" (ngSubmit)="first_submit()">
+    <label>Name</label>
+    <input class="form-control" type="text" name="name" [(ngModel)]="name" placeholder="Enter Name">
+    <small id="emailHelp" class="form-text text-muted">Name will be shared to service</small>
+    <br>
+    <button class="btn btn-primary">Submit</button>
+    <br>
+</form>
+</div>

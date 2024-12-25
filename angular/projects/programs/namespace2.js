@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var namespace1_1 = require("./namespace1");
+var B = namespace1_1.Sruthi.Bus;
+var P = namespace1_1.Sruthi.Passenger;
+var obj1 = new B(2, "iwioewjk");
+var obj2 = new P();
+console.log(obj1.travelling());
+console.log(obj2.booking());
+var source = require("./namespace1");
+var obj3 = new source.Sruthi.Bus(67, "djdsj");
+var obj4 = new source.Sruthi.Passenger();
+console.log(obj3.travelling());
+console.log(obj4.booking());

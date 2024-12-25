@@ -1,0 +1,11 @@
+<h1>{{heading}}</h1>
+<hr/>
+
+<span>Event Binding</span><br>
+<button (click)="disable()">{{name}}</button><br>
+<span *ngIf="isDisabled">Hello There!</span><br>
+<hr/>
+
+<span>Two Way Binding</span><br>
+<span>{{twoWay}}</span><br>
+<textarea cols="100" rows="5" [(ngModel)]="twoWay"></textarea>

@@ -1,0 +1,14 @@
+<form #temp="ngForm">
+<h1>Fahrenheit to Celcius</h1>
+<div>
+  <label>Fahrenheit: </label>
+  <input type="text" name="fah" [(ngModel)]="fah">
+  <span>  Celcius: {{fah|fc:'c'}}</span>
+</div>
+<h1>Celcius to Fahrenheit</h1>
+<div>
+  <label>Celcius: </label>
+  <input type="text" name="cel" [(ngModel)]="cel">
+  <span>  Fahrenheit: {{cel|fc:'f'}}</span>
+</div>
+</form>

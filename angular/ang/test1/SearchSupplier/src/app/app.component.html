@@ -1,0 +1,26 @@
+<body style="margin:20px;">
+<h1 style="text-align:center;background-color: aquamarine;">Search Supplier</h1>
+<hr>
+<div style="margin-bottom:20px;">
+  <label>Supplier Name</label>&nbsp;&nbsp;
+  <input style="width:90%" type="text" placeholder="Enter Supplier Name to Search" name="name" [(ngModel)]="name">
+</div>
+<table border="1" class="table">
+  <thead style="background-color: black;color:white;">
+  <tr>
+    <th>Supplier ID</th>
+    <th>Supplier Name</th>
+    <th>City</th>
+    <th>State</th>
+  </tr>
+</thead>
+<tbody *ngFor="let supplier of supplierData">
+  <tr *ngIf="supplier.supplierName| filter:name">
+    <td>{{supplier.supplierID}}</td>
+    <td>{{supplier.supplierName}}</td>
+    <td>{{supplier.city}}</td>
+    <td>{{supplier.state}}</td>
+  </tr>
+  </tbody>
+</table>
+</body>

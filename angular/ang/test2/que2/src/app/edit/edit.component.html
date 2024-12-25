@@ -1,0 +1,15 @@
+<form style="margin:20px;">
+    <label>ID</label>
+    <input type="text" name="id" [(ngModel)]="value.id"><br><br>
+    <label>Name</label>
+    <input type="text" name="name" [(ngModel)]="value.name"><br><br>
+    <label>Passengers</label>
+    <input type="text" name="passengers" [(ngModel)]="value.passengers"><br><br>
+    <label>Charge</label>
+    <input type="text" name="charge" [(ngModel)]="value.charge"><br><br>
+    <label>Boarding</label>
+    <input type="text" name="boarding" [(ngModel)]="value.boarding"><br><br>
+    <label>Destination</label>
+    <input type="text" name="destination" [(ngModel)]="value.destination"><br><br>
+    <input type="submit" value="submit" (click)="submit()">
+</form>
